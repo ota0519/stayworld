@@ -91,6 +91,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/index.html',
+      minify: false,
     }),
     new CleanWebpackPlugin(),
   ],
