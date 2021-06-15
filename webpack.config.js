@@ -42,6 +42,14 @@ module.exports = {
         ],
       },
       {
+        test: /\.html/,
+        use: [
+          {
+            loader: 'html-loader',
+          },
+        ],
+      },
+      {
         test: /\.(css|sass|scss)/,
         use: [
           {
@@ -91,7 +99,6 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/templates/index.html',
-      minify: false,
     }),
     new CleanWebpackPlugin(),
   ],
