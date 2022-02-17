@@ -115,7 +115,7 @@ main {
     align-items: center;
     text-align: center;
   }
-  
+
   &__ul {
     display: flex;
     align-items: center;
@@ -123,7 +123,7 @@ main {
     margin: 0;
     list-style: none;
   }
-  
+
   &__li {
     margin-left: 20px;
 
@@ -162,12 +162,12 @@ main {
 
   &__title {
     position: relative;
-    
+
     @include p-base(
-      $display: none, 
-      $width: 100px, 
-      $height: 1px, 
-      $top: 50%, 
+      $display: none,
+      $width: 100px,
+      $height: 1px,
+      $top: 50%,
       $left: -120px
       ) {
       background-color: $cBlack;
@@ -227,7 +227,7 @@ main {
     text-align: center;
     flex-basis: 100%;
   }
-} 
+}
 
 .popular {
   &__inner {
@@ -376,18 +376,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-  }
-
-  &.twitter {
-    &::before {
-      background-image: url(../images/twitter.svg);
-    }
-  }
-
-  &.fb {
-    &::before {
-      background-image: url(../images/facebook.svg);
-    }
   }
 
 }
